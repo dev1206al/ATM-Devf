@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/atmStyle.css"> -->
+    <link rel="stylesheet" href="css/modCss.css">
+    <title>ATM-DevFf</title>
+</head>
+<body>
+    <div id="container">
+        <div id="cards">
+            <div class="ics" id="ics1">
+                <div class="innercards" id="rc"></div>
+                <button id="rcb">Insertar</button>
+            </div>
+            <div class="ics" id="ics2">
+                <div class="innercards" id="gc"></div>
+                <button id="gcb">Insertar</button>
+            </div>
+            <div class="ics" id="ics3">
+                <div class="innercards" id="bc"></div>
+                <button id="bcb">Insertar</button>
+            </div>
+        </div>
+        <div id="mainBody">
+            <h3>Hola! Seleccione la opcion deseada.</h3>
+            <ul>
+                <li><a id="cb" href="#">Revisar Balance</a></li>
+                <li><a id="wc" href="#">Retirar dinero</a></li>
+                <li><a id="dc" href="#">Depositar dinero</a></li>
+                <li><a id="ms" href="#">Ultimos movimientos</a></li>
+            </ul>
+            <a href="#" id="remCard">Retirar Tarjeta</a>
+        </div>
+        <div id="pinBody">
+            <h3>Ingresa tu NIP</h3>
+            <div id="pnl">
+                <label for="pn"><p>Tus 4 digitos</p></label>
+                <input  id="pn" type="password"></input>
+                <button id="pe">Enter</button>
+            </div>
+        </div>
+        <div id="withBody">
+            <h3>Ingrese el monto del retiro</h3>
+            <div id="wnl">
+                <label for="withAmount">Cantidad en MXN $</label>
+                <input  id="withAmount" type="number"></input>
+                <button id="withEnter">Enter</button>
+            </div>
+        </div>
+        <div id="depBody">
+            <h3>Ingrese el monto del deposito</h3>
+            <div id="dnl">
+                <label for="depAmount">Cabtidad en MXN $</label>
+                <input  id="depAmount" type="number"></input>
+                <button id="depEnter">Enter</button>
+            </div>
+        </div>
+
+
+        <div id="disScreen">
+            <h3 id="disHeading"></h3>
+            <h2 id="balance"></h2>
+            <a href="#" id="homeBtn">Inicio</a>
+            
+        </div>
+
+    </div>
+    
+    <script src="javascript/atmAct.js"></script>
+</body>
+</html>
